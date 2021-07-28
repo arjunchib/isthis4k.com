@@ -1,0 +1,13 @@
+body {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  grid: 1fr auto /1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+#answer {
+  font-size: 144px;
+}
