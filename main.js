@@ -1,14 +1,16 @@
 function getWidth() {
-  return screen.availWidth * devicePixelRatio
+  return screen.width * devicePixelRatio;
 }
 
 function getHeight() {
-  return screen.availHeight * devicePixelRatio
+  return screen.height * devicePixelRatio;
 }
 
 function is4k() {
-  return getWidth() >= 3840 && getWidth() <= 4096
+  return getWidth() >= 3840 && getWidth() <= 4096;
 }
 
-document.getElementById("answer").innerHTML = is4k() ? "YES" : "NO"
-document.getElementById("info").innerHTML = `Screen dimensions: ${getWidth()} x ${getHeight()}`
+document.getElementById("answer").innerHTML = is4k() ? "YES" : "NO";
+document.getElementById(
+  "info"
+).innerHTML = `Screen dimensions: ${getWidth()} x ${getHeight()}`;
