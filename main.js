@@ -1,9 +1,9 @@
 function getWidth() {
-  return screen.width * devicePixelRatio;
+  return screen.width;
 }
 
 function getHeight() {
-  return screen.height * devicePixelRatio;
+  return screen.height;
 }
 
 function is4k() {
